@@ -66,6 +66,7 @@
 {
     color:var(--mainColor);
     font-family: var(--mainfont);
+    font-weight: bolder;
 }
 
 .header .navbar i
