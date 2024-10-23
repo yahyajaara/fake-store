@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+._loding
+{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+
+}
+
+.load
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 9px solid rgb(208, 211, 212);
+    border-bottom-color: transparent;
+    animation: rotate 2s linear infinite;
+    
+    
+}
+
+.active
+{
+    display: flex;
+}
+
+
+@keyframes rotate 
+{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+
+}
+
+
+/*********end loading******************************************************************************************/
+
+.header
+{
+    background-color: rgb(208, 211, 212);
+    padding: 20px 5px;
+    box-shadow: 0px 25px 50px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 40px;
+}
+
+.header .logo  .row
+{
+    gap: 5px;
+}
+
+.header .logo p
+{
+    color:var(--mainColor);
+    font-family: var(--mainfont);
+}
+
+.header .navbar i
+{
+    display: none;
+}
+
+.header .navbar ul 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.header .navbar ul a 
+{
+    font-family: var(--mainfont);
+    color: black;
+}
+
+.header .navbar ul .active
+{
+    font-weight: bold;
+}
+
+
+
+.header .auth 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.header .auth .login
+{
+    font-family: var(--primefont);
+    color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+.header .auth .register
+{
+    font-family: var(--primefont);
+    color: var(--primeColor);
+    background-color: var(--mainColor);
+    border: 0.4px solid var(--mainColor) ;
+    border-radius: 4.11px ;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+
+
+@media screen and (max-width: 1200px) 
+{
+ 
+    .header .navbar ul 
+    {
+        display: none;
+    }
+
+    .header .navbar i
+    {
+        display: block;
+    }
+
+    .header .navbar
+    {
+        order: 2;
+    }
+
+}
+
+
+@media screen and (max-width: 696px) 
+{
+
+    .header .auth
+    {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) 
+{
+    .container
+    {
+        width:calc(100% - 50px);
+        margin: auto;
+    }
+
+    .header .navbar
+    {
+        margin-right: 0px;
+    }
+
+}
+
+
+
+/**************end header************************************************************************************/
+
+
+
+
+/****************************************************************************************************/
+*
+{
+    margin:  0;
+    padding: 0;
+}
+
+/****************************************************************************************************/
+
+body 
+{
+  background: radial-gradient(circle, #33473C, #2C3949, #1F2A35, #182024);
+  background-size: 200% 200%;
+  animation: darkRipple 8s infinite;
+  font-size: 20px;
+}
+
+@keyframes darkRipple 
+{
+  0% { background-position: 50% 50%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 50% 50%; }
+}
+
+
+/****************************************************************************************************/
+
+html
+{
+    --mainfont: "Poppins";
+    --primefont : "Inter";
+    --mainColor: rgba(13, 81, 68, 0.864);
+    --primeColor: #FFFFFF;
+}
+
+/****************************************************************************************************/
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/****************************************************************************************************/
+
+ul
+{
+    list-style-type: none;
+}
+
+/****************************************************************************************************/
+
+.container
+{
+    width:calc(100% - 150px);
+    margin: auto;
+  
+}
+
+/****************************************************************************************************/
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/****************************************************************************************************/
