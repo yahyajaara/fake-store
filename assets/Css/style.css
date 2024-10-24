@@ -28,10 +28,17 @@
     background-color: rgb(208, 211, 212);
     box-shadow: 0px 10px 10px black ;
     border: 4px solid rgb(11, 83, 69);
+    border-radius: var(--border-radius);
     color: var(--mainColor);
     
-    
 }
+
+.product-name a:hover
+{
+    color: rgb(192, 2, 2);
+}
+
+
 
 /*************************************************************************************/
 
@@ -46,6 +53,7 @@
     padding: 20px;
     box-sizing: border-box;
     border: 4px solid rgb(11, 83, 69);
+    border-radius: var(--border-radius);
     color: var(--mainColor);
 }
 
@@ -81,7 +89,8 @@
     padding: 10px 20px;
     box-sizing: border-box;
     font-weight: bold;
-    border: 3px solid rgb(33, 47, 60 );
+    border: 3px solid #0f375f;
+    border-radius: var(--border-radius);
     color: var(--mainColor);
 }
 
