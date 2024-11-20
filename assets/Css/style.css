@@ -94,6 +94,157 @@
     color: var(--mainColor);
 }
 
+/*************************************************************************/
 
+.all_product
+{
+    margin-bottom: 50px;
+}
 
+.all_product .row
+{
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
 
+.all_product .aproduct
+{
+    background-color: rgb(208, 211, 212);
+    width: calc((100% - 80px)/3);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    cursor: pointer;
+    
+}
+
+/*************************************************************************************/
+.pagination 
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.pagination-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-item 
+{
+    margin: 0 5px;
+}
+
+.page-link 
+{
+    display: block;
+    padding: 10px 15px;
+    color: #00d1a7;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid var(--primeColor);
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+.page-link:hover 
+{
+    background-color: #0b5345 ;
+    color: var(--primeColor);
+    border-color: #0b5345;
+}
+
+.page-itemactive .page-link 
+{
+    background-color: #0b5345;
+    color: #fff;
+    border-color: #0b5345;
+}
+
+.page-item.disabled .page-link 
+{
+    color: #ccc;
+    cursor: not-allowed;
+    border-color: #ddd;
+    
+}
+
+.my_modal
+{
+width: 100%;
+height: 100%;
+padding:40px;
+position: fixed;
+background-color: rgb(0,0,0,0.8);
+top: 0;
+left: 0;
+
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+align-items: center;
+
+}
+
+.my_imge
+{
+    background-color: #ccc;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: rgb(0, 4, 8,0.5);
+    position: relative;
+}
+
+.my_imge img
+{
+    width: 400px;
+}
+
+.my_imge .closeButton , .rightButton ,.leftButton
+{
+    position: absolute;
+}
+
+.my_imge .closeButton
+{
+    top: 25px;
+    right: 15px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #0b5345;
+    cursor: pointer;
+}
+
+.my_imge .rightButton
+{
+
+    top: 50%;
+    right: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0b5345;
+}
+
+.my_imge .leftButton
+{
+
+    top: 50%;
+    left: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0b5345;
+}
+
+.nonDisabled 
+{
+    display: none;
+}
